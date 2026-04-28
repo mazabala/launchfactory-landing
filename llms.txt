@@ -1,0 +1,29 @@
+# LaunchFactory - From Zero to Live
+
+## Site Description
+A step-by-step guide to building and launching a real online product (Hook Generator) in one weekend using AI tools. No coding experience required.
+
+## Product Details
+- **Name:** From Zero to Live: Vibe Code Your First Online Product in a Weekend
+- **Price:** $27 (founders price)
+- **Format:** Digital ebook (PDF)
+- **Author:** Manny Zabala (@rutadba)
+
+## What You'll Learn
+- Set up GitHub and Antigravity accounts
+- Use Claude Code to build a complete web tool
+- Create 100+ hook templates for social media
+- Deploy live to Render with your own domain
+- Embed email capture forms with Tally
+
+## Tech Stack Covered
+Antigravity, GitHub, Claude Code, Render, Tally, Namecheap
+
+## Contact
+Email: hola@rutadba.com
+
+## Purchase Flow
+1. User clicks CTA on landing page
+2. Redirected to Gumroad/payment link
+3. After payment, redirected to thank-you page
+4. Product delivered via email confirmation

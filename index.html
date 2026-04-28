@@ -4,7 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>From Zero to Live: Vibe Code Your First Online Product in a Weekend</title>
-    <meta name="description" content="A beginner's guide to building and launching a real online product using AI. No coding knowledge required.">
+    <meta name="description" content="Build a real online product in one weekend with zero coding experience. Copy prompts, use AI, deploy live. Step-by-step guide by Manny Zabala.">
+    <link rel="canonical" href="https://launchfactory.store/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://launchfactory.store/">
+    <meta property="og:title" content="From Zero to Live: Vibe Code Your First Online Product in a Weekend">
+    <meta property="og:description" content="Build a real online product in one weekend with zero coding experience. Step-by-step guide.">
+    <meta property="og:image" content="https://launchfactory.store/og-image.png">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@rutadba">
+    <meta name="twitter:title" content="From Zero to Live: Vibe Code Your First Online Product in a Weekend">
+    <meta name="twitter:description" content="Build a real online product in one weekend with zero coding experience.">
+    <meta name="twitter:image" content="https://launchfactory.store/og-image.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "From Zero to Live: Vibe Code Your First Online Product in a Weekend",
+        "description": "A beginner's guide to building and launching a real online product using AI. No coding knowledge required.",
+        "offers": {
+            "@type": "Offer",
+            "price": "27",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "brand": {
+            "@type": "Brand",
+            "name": "LaunchFactory"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Manny Zabala"
+        }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
     <style>
         * {
             margin: 0;
@@ -43,6 +87,19 @@
             letter-spacing: 1px;
         }
 
+        .urgency {
+            display: inline-block;
+            background: #2a1a1a;
+            border: 1px solid #8b2020;
+            color: #ff6b6b;
+            font-size: 12px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
         h1 {
             font-size: 36px;
             font-weight: 700;
@@ -57,21 +114,39 @@
             margin-bottom: 32px;
         }
 
+        .cta-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
         .cta-button {
-            display: inline-block;
+            display: block;
+            width: 100%;
+            max-width: 320px;
             background: #fff;
             color: #000;
             font-size: 18px;
             font-weight: 600;
-            padding: 16px 40px;
+            padding: 16px 32px;
             border-radius: 8px;
             text-decoration: none;
             transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
         }
 
         .cta-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+        }
+
+        .cta-secondary {
+            background: transparent;
+            border: 1px solid #333;
+            color: #666;
+            font-size: 14px;
+            padding: 12px 24px;
         }
 
         .price {
@@ -83,6 +158,19 @@
         .price strong {
             color: #fff;
             font-size: 24px;
+        }
+
+        .guarantee {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #0a1a0a;
+            border: 1px solid #1a3a1a;
+            color: #4ade80;
+            font-size: 13px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-top: 12px;
         }
 
         section {
@@ -196,6 +284,30 @@
             color: #666;
         }
 
+        .trust-bar {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            padding: 24px 0;
+            border-top: 1px solid #1a1a1a;
+            border-bottom: 1px solid #1a1a1a;
+            margin: 40px 0;
+        }
+
+        .trust-item {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+        }
+
+        .trust-number {
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
         footer {
             text-align: center;
             padding: 60px 0;
@@ -207,6 +319,7 @@
             color: #444;
         }
 
+        /* Mobile Optimizations */
         @media (max-width: 600px) {
             h1 {
                 font-size: 28px;
@@ -217,6 +330,21 @@
             .feature-grid {
                 grid-template-columns: 1fr;
             }
+            .cta-button {
+                max-width: 100%;
+                padding: 18px 24px;
+                font-size: 16px;
+            }
+            .trust-bar {
+                flex-direction: column;
+                gap: 16px;
+            }
+            header {
+                padding: 40px 0 32px;
+            }
+            section {
+                padding: 40px 0;
+            }
         }
     </style>
 </head>
@@ -224,11 +352,21 @@
 
     <div class="container">
         <header>
+            <div class="urgency">Founders Price Ends April 30</div>
             <div class="badge">Beginner Guide</div>
             <h1>From Zero to Live:<br>Vibe Code Your First Online Product in a Weekend</h1>
             <p class="subheadline">Build a real working tool without writing code. Copy the prompts. Ship it live.</p>
-            <a href="https://gumroad.com/l/hook-generator-ebook" class="cta-button">Get the eBook</a>
+
+            <div class="cta-wrapper">
+                <a href="#" class="cta-button" id="main-cta">Get Instant Access — $27</a>
+                <a href="#" class="cta-button cta-secondary">Have Questions? Email hola@rutadba.com</a>
+            </div>
+
             <p class="price"><strong>$27</strong> for the complete guide</p>
+            <div class="guarantee">
+                <span>🛡️</span>
+                <span>30-Day Money-Back Guarantee</span>
+            </div>
         </header>
 
         <section>
@@ -316,6 +454,10 @@
                 <div class="faq-q">What does it cost to run?</div>
                 <div class="faq-a">Free to build and deploy on Render. About $10/year if you buy a custom domain.</div>
             </div>
+            <div class="faq-item">
+                <div class="faq-q">What if it's not for me?</div>
+                <div class="faq-a">30-day money-back guarantee. If you follow the steps and it doesn't work, email hola@rutadba.com for a full refund.</div>
+            </div>
         </section>
 
         <section>
@@ -327,7 +469,7 @@
         </section>
 
         <footer>
-            <a href="https://gumroad.com/l/hook-generator-ebook" class="cta-button">Get the eBook — $27</a>
+            <a href="#" class="cta-button" id="footer-cta">Get Instant Access — $27</a>
             <p style="margin-top: 24px;">launchfactory.store</p>
         </footer>
     </div>
