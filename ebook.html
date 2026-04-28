@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Zero to Live: Vibe Code Your First Online Product in a Weekend</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        header {
+            padding: 80px 0 60px;
+            text-align: center;
+            border-bottom: 1px solid #1a1a1a;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .subtitle {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 32px;
+        }
+        .badge {
+            display: inline-block;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #666;
+            font-size: 11px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #fff;
+            margin: 48px 0 20px;
+            padding-top: 48px;
+            border-top: 1px solid #1a1a1a;
+        }
+        h3 {
+            font-size: 18px;
+            color: #ddd;
+            margin: 32px 0 12px;
+        }
+        h4 {
+            font-size: 15px;
+            color: #bbb;
+            margin: 24px 0 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        p { margin-bottom: 16px; color: #aaa; }
+        ul, ol { margin: 16px 0 16px 24px; }
+        li { margin-bottom: 8px; color: #aaa; }
+        li strong { color: #ddd; }
+        hr {
+            border: none;
+            border-top: 1px solid #1a1a1a;
+            margin: 48px 0;
+        }
+        blockquote {
+            border-left: 3px solid #333;
+            padding-left: 20px;
+            margin: 24px 0;
+            color: #888;
+            font-style: italic;
+        }
+        code {
+            background: #111;
+            border: 1px solid #222;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            color: #ccc;
+        }
+        pre {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 24px 0;
+            overflow-x: auto;
+        }
+        pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+        .checklist li {
+            padding-left: 28px;
+            position: relative;
+        }
+        .checklist li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+        }
+        .chapter-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 0;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 60px;
+        }
+        .chapter-nav a {
+            color: #666;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+        .chapter-nav a:hover { color: #fff; }
+        .chapter-nav .next { color: #fff; }
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 80px;
+        }
+        footer p { font-size: 14px; color: #444; }
+        .intro-box {
+            background: #111;
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            padding: 24px;
+            margin: 24px 0;
+        }
+        .intro-box p { margin-bottom: 12px; color: #999; }
+        .intro-box p:last-child { margin-bottom: 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 14px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px 14px;
+            border: 1px solid #1a1a1a;
+        }
+        th { background: #111; color: #fff; }
+        td { color: #aaa; }
+        tr:nth-child(even) td { background: #0a0a0a; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <div class="badge">Free eBook</div>
+    <h1>From Zero to Live:<br>Vibe Code Your First Online Product in a Weekend</h1>
+    <p class="subtitle">A beginner's guide to building and launching a Hook Generator tool using AI</p>
+</header>
+
+<p><strong>You do not need to know how to code.</strong> You need a computer, an internet connection, and the willingness to copy some commands.</p>
+
+<p>This guide walks you through building the <strong>Hook Generator</strong> — a web tool where someone enters a topic and gets back 10 social media hook ideas based on proven templates.</p>
+
+<p>By Sunday night, you'll have a live product deployed at your own domain name.</p>
+
+<h2>What the tool does</h2>
+<ul>
+<li>User enters a topic (e.g., "fitness coaching")</li>
+<li>User picks a platform (Instagram, TikTok, Twitter, LinkedIn)</li>
+<li>Clicks "Generate"</li>
+<li>Gets 10 hook options to copy</li>
+<li>Optionally submits their email via embedded form</li>
+</ul>
+
+<div class="intro-box">
+<p><strong>How it actually works:</strong> The tool combines your topic with a JavaScript library of 100+ proven hook templates. Results are shuffled so each generation feels fresh. It is template-based, not AI. You are building a tool that mixes and matches templates, not a magic generator.</p>
+</div>
+
+<h2>Who this is for</h2>
+<ul>
+<li>Anyone who posts on social media</li>
+<li>Content creators who hate writing headlines</li>
+<li>Marketers who need hook ideas fast</li>
+</ul>
+
+<h2>The Stack</h2>
+<ul>
+<li><strong>Antigravity</strong> — Browser IDE with Claude Code</li>
+<li><strong>GitHub</strong> — Code storage</li>
+<li><strong>Claude Code</strong> — The AI that writes the code</li>
+<li><strong>Render</strong> — Where the product goes live</li>
+<li><strong>Tally</strong> — Email capture (embedded form, no backend)</li>
+<li><strong>Namecheap</strong> — Your domain name</li>
+</ul>
+
+<p><strong>Total cost:</strong> Free if you use the Render URL, around $10/year if you buy a custom domain.</p>
+
+<hr>
+
+<h2>Chapter 1: Get Your Tools Ready</h2>
+
+<h3>What You're Doing</h3>
+<p>Setting up accounts. Takes about 20 minutes.</p>
+
+<h3>Step 1.1: Create a GitHub Account</h3>
+<ol>
+<li>Go to github.com</li>
+<li>Click "Sign Up"</li>
+<li>Pick a professional username</li>
+<li>Enter your email and create a password</li>
+<li>Verify your account</li>
+</ol>
+
+<h3>Step 1.2: Open Antigravity</h3>
+<ol>
+<li>Go to Antigravity and create an account</li>
+<li>Log in</li>
+<li>You should see a code editor interface</li>
+</ol>
+<p>Leave this tab open.</p>
+
+<h3>Step 1.3: Connect GitHub to Antigravity</h3>
+<ol>
+<li>In Antigravity, look for a GitHub icon or settings</li>
+<li>Click "Connect GitHub"</li>
+<li>Authorize the connection</li>
+<li>You should see your GitHub username appear</li>
+</ol>
+<p>This way your code is saved and you do not lose anything.</p>
+
+<h3>Verify Before Moving On</h3>
+<ul class="checklist">
+<li>You can log into GitHub</li>
+<li>You can log into Antigravity</li>
+<li>Antigravity shows your GitHub account connected</li>
+</ul>
+
+<hr>
+
+<h2>Chapter 2: Build the Hook Generator</h2>
+
+<h3>What You're Doing</h3>
+<p>Using Claude Code to build the entire tool. This is the main work. Takes 2-4 hours.</p>
+
+<h3>Step 2.1: Open a New Project in Antigravity</h3>
+<ol>
+<li>In Antigravity, create a new project or open from GitHub</li>
+<li>Name it: hook-generator</li>
+<li>Make sure it is empty to start</li>
+</ol>
+
+<h3>Step 2.2: Ask Claude Code to Build the Landing Page</h3>
+<p>Find the Claude Code chat in Antigravity. Paste this prompt:</p>
+<pre><code>Build a Hook Generator web tool. Single HTML page with:
+- Dark theme, clean modern design
+- Headline: "Turn any topic into 10 hook ideas"
+- Subheadline: "Enter your topic, pick a platform, get hooks you can copy right now"
+- Topic input field (text input with placeholder "e.g., fitness coaching")
+- Platform selector: Instagram, TikTok, Twitter, LinkedIn (button group or dropdown)
+- "Generate Hooks" button (prominent, full width on mobile)
+- Results section: empty to start, shows 10 hook cards after generation
+- Each hook card shows the hook text + a "Copy" button
+- Mobile responsive with smooth animations</code></pre>
+<p>Claude will create files. Say yes to creating them. Preview the page.</p>
+
+<h3>Step 2.3: Add the Hook Template Library</h3>
+<p>Go back to Claude Code. Paste this prompt:</p>
+<pre><code>Add a JavaScript hook library to this page with at least 100 hook templates.
+
+Organize them by type:
+- Numbers: "The 1 thing...", "3 reasons why...", "5 ways to...", "The only X you need..."
+- Questions: "Why does everyone...", "What if I told you...", "How come...", "Did you know..."
+- Contrast: "Most people X, but...", "You think X but actually Y", "Unlike most people who..."
+- Bold claims: "The truth about...", "Nobody tells you...", "Stop doing X...", "The secret to..."
+- Curiosity: "You will never guess...", "This is why...", "Here's the secret...", "The real reason..."
+
+Create a generateHooks function that:
+- Takes the user topic (from the input field)
+- Takes the selected platform
+- Returns 10 hook options by combining the topic with template patterns
+- Shuffles the results so they are different each time
+- Shows a brief loading state (1 second) before showing results
+- Adds the platform name to each hook naturally
+
+This is a template-based generator, not AI. The function mixes your topic with existing templates.</code></pre>
+<p>Preview. Type a topic, pick a platform, click Generate. Does it work?</p>
+
+<h3>Step 2.4: Make the Copy Button Work</h3>
+<p>Go back to Claude Code. Paste this prompt:</p>
+<pre><code>Add clipboard copy functionality to each hook card.
+
+When the user clicks "Copy" on any hook:
+- Copy the hook text to clipboard
+- Change the button text to "Copied!"
+- After 2 seconds, change it back to "Copy"
+- Make sure it works on mobile and desktop</code></pre>
+<p>Test this. Click a Copy button. Does it say "Copied!" and then change back?</p>
+
+<h3>Step 2.5: Create Your Tally Form</h3>
+<p>Tally lets you collect emails without any backend code.</p>
+<ol>
+<li>Go to tally.so and create a free account</li>
+<li>Create a new form with:
+<ul><li>A short headline (e.g., "Save these hooks")</li><li>One email field (required)</li></ul></li>
+<li>In the form settings, get the embed code</li>
+<li>Copy the iframe src URL</li>
+</ol>
+<p>Your embed URL looks like:</p>
+<pre><code>https://tally.so/embed/YOUR-FORM-ID?alignLeft=1&hideTitle=1&dynamicHeight=1</code></pre>
+<p>Replace YOUR-FORM-ID with your actual form ID from Tally.</p>
+
+<h3>Step 2.6: Embed Tally Form Below Results</h3>
+<p>Go to Claude Code. Paste this prompt:</p>
+<pre><code>Add a Tally email form below the hook results section.
+
+Use this iframe embed (replace YOUR-FORM-ID with your actual Tally form ID):
+https://tally.so/embed/YOUR-FORM-ID?alignLeft=1&hideTitle=1&dynamicHeight=1
+
+Style the iframe to be full width and have a minimum height of around 150px.
+Add a small headline above the form: "Want more hooks? Drop your email."</code></pre>
+<p>Replace YOUR-FORM-ID with your actual Tally form ID.</p>
+
+<h3>Step 2.7: Test Everything</h3>
+<p>Preview the page:</p>
+<ol>
+<li>Enter a topic</li>
+<li>Pick a platform</li>
+<li>Click Generate</li>
+<li>See 10 hooks appear</li>
+<li>Click Copy on one hook</li>
+<li>Scroll down and confirm the Tally form is there</li>
+<li>Submit a test entry to your Tally form</li>
+</ol>
+<p>If something breaks, tell Claude Code what went wrong and ask it to fix it.</p>
+
+<hr>
+
+<h2>Chapter 3: Deploy to Render</h2>
+
+<h3>What You're Doing</h3>
+<p>Putting your product on the internet.</p>
+
+<h3>Step 3.1: Push to GitHub</h3>
+<p>Go to Claude Code. Paste this prompt:</p>
+<pre><code>Initialize git in this project if not already initialized.
+Create a .gitignore file (ignore node_modules if any).
+Commit everything with message "initial commit"
+Push to GitHub.</code></pre>
+<p>Verify on GitHub that your files are there.</p>
+
+<h3>Step 3.2: Create a Render Account</h3>
+<ol>
+<li>Go to render.com</li>
+<li>Click "Get Started"</li>
+<li>Sign up with your GitHub account</li>
+<li>Verify your email</li>
+</ol>
+
+<h3>Step 3.3: Deploy</h3>
+<ol>
+<li>In Render, click "New" and select "Web Service"</li>
+<li>Connect your GitHub account</li>
+<li>Find and select your hook-generator repository</li>
+<li>Configure these settings:</li>
+</ol>
+
+<table>
+<tr><th>Setting</th><th>Value</th></tr>
+<tr><td>Name</td><td>hook-generator (or your choice)</td></tr>
+<tr><td>Region</td><td>Closest to you</td></tr>
+<tr><td>Branch</td><td>main</td></tr>
+<tr><td>Root Directory</td><td>Leave empty</td></tr>
+<tr><td>Runtime</td><td>Static</td></tr>
+<tr><td>Build Command</td><td>Leave empty</td></tr>
+<tr><td>Publish Directory</td><td>./</td></tr>
+</table>
+
+<ol start="5">
+<li>Click "Create Web Service"</li>
+<li>Wait 30-60 seconds for it to deploy</li>
+<li>You will see "Live" when it is done</li>
+</ol>
+<p>Click the URL Render gives you. Your product is now live on the internet.</p>
+<p>Save that URL. You need it for the next step.</p>
+
+<hr>
+
+<h2>Chapter 4: Connect Your Domain</h2>
+
+<h3>What You're Doing</h3>
+<p>Making your product show up at your own domain name instead of the Render URL.</p>
+
+<h3>Step 4.1: Go to Namecheap DNS Settings</h3>
+<ol>
+<li>Log into Namecheap</li>
+<li>Go to Dashboard</li>
+<li>Find your domain</li>
+<li>Click "Manage" then "DNS"</li>
+</ol>
+
+<h3>Step 4.2: Get the DNS Records from Claude Code</h3>
+<p>Go to Claude Code. Paste this prompt:</p>
+<pre><code>My domain
