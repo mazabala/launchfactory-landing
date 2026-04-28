@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Got It! - From Zero to Live</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+        .container {
+            max-width: 560px;
+            text-align: center;
+        }
+        .icon {
+            font-size: 64px;
+            margin-bottom: 32px;
+        }
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        .subheadline {
+            font-size: 18px;
+            color: #888;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .email-box {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 40px;
+        }
+        .email-box h2 {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .email-box p {
+            font-size: 15px;
+            color: #888;
+            line-height: 1.6;
+        }
+        .email-box p strong {
+            color: #fff;
+        }
+        .checklist {
+            text-align: left;
+            margin: 24px 0;
+        }
+        .checklist li {
+            list-style: none;
+            padding: 8px 0;
+            color: #aaa;
+            font-size: 15px;
+        }
+        .checklist li::before {
+            content: "✓ ";
+            color: #4ade80;
+            margin-right: 8px;
+        }
+        .divider {
+            border-top: 1px solid #1a1a1a;
+            margin: 40px 0;
+        }
+        .spam-note {
+            font-size: 13px;
+            color: #555;
+            margin-top: 16px;
+        }
+        .spam-note a {
+            color: #666;
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 48px;
+            padding-top: 32px;
+            border-top: 1px solid #1a1a1a;
+        }
+        footer p {
+            font-size: 13px;
+            color: #444;
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 28px; }
+            .email-box { padding: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">✅</div>
+        <h1>Payment Confirmed!</h1>
+        <p class="subheadline">You're in. Your ebook is on its way to your inbox.</p>
+
+        <div class="email-box">
+            <h2>Check Your Email</h2>
+            <p>Your download link is being sent <strong>right now</strong> to the email address you provided at checkout.</p>
+            <p style="margin-top: 12px;">It may take 2-5 minutes to arrive. Check your inbox and spam folder if you don't see it.</p>
+        </div>
+
+        <ul class="checklist">
+            <li>Email with download link sent to your inbox</li>
+            <li>Link stays active for 30 days</li>
+            <li>Save the email so you can download anytime</li>
+        </ul>
+
+        <div class="divider"></div>
+
+        <p class="spam-note">Not seeing the email? Check your spam or junk folder. Add <a href="mailto:hola@rutadba.com">hola@rutadba.com</a> to your contacts to make sure it gets through.</p>
+
+        <footer>
+            <p>Questions? Email hola@rutadba.com</p>
+        </footer>
+    </div>
+</body>
+</html>
