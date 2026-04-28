@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Zero to Live: Vibe Code Your First Online Product in a Weekend</title>
+    <meta name="description" content="A beginner's guide to building and launching a real online product using AI. No coding knowledge required.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #1a1a1a;
+            border: 1px solid #333;
+            color: #888;
+            font-size: 12px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .subheadline {
+            font-size: 20px;
+            color: #888;
+            margin-bottom: 32px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #fff;
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 16px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(255,255,255,0.15);
+        }
+
+        .price {
+            margin-top: 16px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .price strong {
+            color: #fff;
+            font-size: 24px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+
+        .problem-list {
+            list-style: none;
+        }
+
+        .problem-list li {
+            padding: 16px 0;
+            border-bottom: 1px solid #1a1a1a;
+            color: #999;
+        }
+
+        .problem-list li:last-child {
+            border-bottom: none;
+        }
+
+        .check {
+            color: #4ade80;
+            margin-right: 8px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .feature-item {
+            background: #111;
+            border: 1px solid #1a1a1a;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .feature-item h3 {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .feature-item p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .stack-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .stack-item {
+            background: #111;
+            border: 1px solid #222;
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .testimonial {
+            background: #111;
+            border: 1px solid #1a1a1a;
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            color: #ccc;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #1a1a1a;
+            padding: 20px 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .faq-a {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: #444;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            .subheadline {
+                font-size: 18px;
+            }
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="badge">Beginner Guide</div>
+            <h1>From Zero to Live:<br>Vibe Code Your First Online Product in a Weekend</h1>
+            <p class="subheadline">Build a real working tool without writing code. Copy the prompts. Ship it live.</p>
+            <a href="https://gumroad.com/l/hook-generator-ebook" class="cta-button">Get the eBook</a>
+            <p class="price"><strong>$27</strong> for the complete guide</p>
+        </header>
+
+        <section>
+            <h2>What This Is</h2>
+            <p style="color:#999; margin-bottom: 24px;">A step-by-step guide that takes you from zero to a live product in one weekend. You do not need to know how to code. You copy the prompts, paste them into Claude Code, and follow the steps.</p>
+            <p style="color:#999; margin-bottom: 24px;">The product you build: A <strong style="color:#fff;">Hook Generator</strong> — a web tool where someone enters a topic and gets 10 social media hook ideas they can copy and use. It looks real. It works real.</p>
+            <p style="color:#999;">Template-based (JavaScript), not AI. No magic. Just a working tool you built yourself.</p>
+        </section>
+
+        <section>
+            <h2>Who This Is For</h2>
+            <ul class="problem-list">
+                <li><span class="check">✓</span>Anyone who wants to ship a real product without learning to code</li>
+                <li><span class="check">✓</span>Content creators who need hook ideas for social media</li>
+                <li><span class="check">✓</span>People tired of watching tutorials and not building anything</li>
+                <li><span class="check">✓</span>Beginners who want to understand the full stack: code → deploy → domain</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>What You Build</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Landing Page</h3>
+                    <p>Clean headline, topic input, platform selector. Built by Claude Code from a single prompt.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Working Generator</h3>
+                    <p>100+ hook templates. Shuffled results. Copy-to-clipboard on each hook.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Email Capture</h3>
+                    <p>Tally form embedded below results. No backend. No code.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Live Deployment</h3>
+                    <p>Your own URL on Render. Your own domain from Namecheap.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>The Stack</h2>
+            <div class="stack-list">
+                <div class="stack-item">Antigravity</div>
+                <div class="stack-item">GitHub</div>
+                <div class="stack-item">Claude Code</div>
+                <div class="stack-item">Render</div>
+                <div class="stack-item">Tally</div>
+                <div class="stack-item">Namecheap</div>
+            </div>
+            <p style="color:#555; font-size:13px; margin-top: 16px;">Total cost: free to start, ~$10/year for a custom domain.</p>
+        </section>
+
+        <section>
+            <h2>What You Get</h2>
+            <ul class="problem-list">
+                <li><span class="check">✓</span>Complete 6-chapter guide (ebook)</li>
+                <li><span class="check">✓</span>Copy-paste prompts for every step</li>
+                <li><span class="check">✓</span>Troubleshooting section</li>
+                <li><span class="check">✓</span>Launch checklist</li>
+                <li><span class="check">✓</span>No fluff, no theory, no filler</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>FAQ</h2>
+            <div class="faq-item">
+                <div class="faq-q">Do I need to know how to code?</div>
+                <div class="faq-a">No. You copy prompts and paste them into Claude Code. The AI writes the code. You follow the steps.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">How long does it take?</div>
+                <div class="faq-a">One weekend if you focus. 2-4 hours of active building time.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">Is this an AI course?</div>
+                <div class="faq-a">No. It is a build guide. You use AI as a tool to build an actual product. The tool is template-based JavaScript, not AI generation.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">What if I get stuck?</div>
+                <div class="faq-a">The guide includes troubleshooting prompts for common issues. You can paste them into Claude Code to get unstuck.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-q">What does it cost to run?</div>
+                <div class="faq-a">Free to build and deploy on Render. About $10/year if you buy a custom domain.</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Reviews</h2>
+            <div class="testimonial">
+                <p class="testimonial-text">"I had zero coding experience. By Sunday night I had a live tool at my own domain. I did not think it was possible in one weekend."</p>
+                <p class="testimonial-author">— Early tester</p>
+            </div>
+        </section>
+
+        <footer>
+            <a href="https://gumroad.com/l/hook-generator-ebook" class="cta-button">Get the eBook — $27</a>
+            <p style="margin-top: 24px;">launchfactory.store</p>
+        </footer>
+    </div>
+
+</body>
+</html>
